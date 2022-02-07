@@ -1,0 +1,35 @@
+MODULE_HOME="Module"
+
+@Filter("NanoFilt")
+QC = {
+	exec "NanoFilt -q 8 -l 180 --maxlength 1500 $input.fastq > $output.fastq"
+}
+
+AMR = {
+	exec "sh $MODULE_HOME/main/AMR.bash $input.fastq ../$MODULE_HOME"
+}
+
+SNP = {
+	exec "sh $MODULE_HOME/main/SNP.bash $input.fastq ../$MODULE_HOME"
+}
+
+SGA_001 = {
+	exec "sh $MODULE_HOME/main/SGA_001.bash $input.fastq ../$MODULE_HOME"
+}
+
+SGA_002 = {
+	exec "sh $MODULE_HOME/main/SGA_002.bash $input.fastq ../$MODULE_HOME"
+}
+
+SGA_003 = {
+	exec "sh $MODULE_HOME/main/SGA_003.bash $input.fastq ../$MODULE_HOME"
+}
+
+MLST = {
+	exec "sh $MODULE_HOME/main/MLST.bash $input.fastq ../$MODULE_HOME"
+}
+
+about title: "耐药分析流程"
+Bpipe.run {
+	 "%.fastq" * [QC + [AMR, SNP, SGA_001, SGA_003, MLST],SGA_002]
+}

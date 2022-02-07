@@ -1,0 +1,12 @@
+菌种	药物种类	判断标志物	结果解释
+鲍曼不动杆菌	氨苄西林/舒巴坦	AMR(GP_lactum_1)-|-AMR(GP_lactum_2)-|-AMR(GP_lactum_4)	抗生素修饰失活
+鲍曼不动杆菌	哌拉西林/他唑巴坦	AMR(GP_AG_1)-&-AMR(GP_AG_2)	抗生素修饰失活
+鲍曼不动杆菌	头孢哌酮/舒巴坦	gyrA_epidermidis(S84)	抗生素修饰失活
+鲍曼不动杆菌	头孢他啶	gyrA_haemolyticus(S84)-|-AMR(GP_macrolide_2)	抗生素修饰失活
+鲍曼不动杆菌	头孢吡肟	SGA_001	抗生素修饰失活
+鲍曼不动杆菌	亚胺培南	SGA_002_adeN	
+鲍曼不动杆菌	美罗培南	AMR(GP_lactum_1)-|-AMR(GP_lactum_2)-&-SGA_001	OXA型碳青霉烯酶
+鲍曼不动杆菌	环丙沙星	AMR(GP_AG_1)-&-AMR(GP_AG_2)-|-adeNf	靶位突变
+鲍曼不动杆菌	左氧氟沙星	MLST(Efm_CC78)	靶位突变
+鲍曼不动杆菌	左氧氟沙星	AMR(E1)-|-MLST(Efm_CC78)	质粒介导低水平耐药
+鲍曼不动杆菌	庆大霉素	/	抗生素修饰失活

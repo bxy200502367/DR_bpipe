@@ -1,0 +1,5 @@
+Kpneumoniae_ST11	K_pneumoniae_2_3	K_pneumoniae_3_4
+Kpneumoniae_ST23	K_pneumoniae_2_2	K_pneumoniae_3_12
+Kpneumoniae_ST15	K_pneumoniae_2_1	K_pneumoniae_3_1
+Efs_ST4	E16_Efs_1_8	E17_Efs_2_4
+Efm_CC78	E18_Efm_1_1	E18_Efm_1_1
